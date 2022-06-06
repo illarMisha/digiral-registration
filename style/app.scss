@@ -1,0 +1,60 @@
+@import "_fonts";
+@import "_null";
+@import "_classes";
+
+.header-backg, .main-backg{
+    background-color:#FFFFFF;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 48px;
+    color: #000000;
+    margin-top: 60px;
+}
+.main{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    .form{
+        display: flex;
+        flex-direction: column;
+        .form__input{
+            max-width: 800px;
+            border-bottom: 1px solid #000000;
+            color:#000000;
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 50px;
+        }
+        .form__input:first-child{
+            margin-top: 0px;
+        }
+        .form__lebel{
+            font-weight: 700;
+            font-size: 32px;
+            color: #000000;
+            margin-top: 10px
+        }
+        .form__btn{
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            .input__btn{
+                font-weight: 700;
+                font-size: 48px;
+                background: #EFCB10;
+                padding: 15px 100px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@import "_adaptive.scss";
